@@ -165,3 +165,21 @@ Every line should say **PASS**. Open `github.com/YOUR-USERNAME/Practice1` in you
 | `Your code is committed` FAIL | Saved but not committed | Step 8, parts 1 to 3 |
 | `Your commit is pushed to GitHub` FAIL | Committed but not pushed | Click **Sync Changes**, or run `git push` |
 | `python` opens the Microsoft Store | Windows is using a shortcut instead of real Python | Try `py check.py` instead, then ask your instructor |
+
+## Use Practice1 on another computer
+
+Each computer gets its own local copy. GitHub is how you move your work between them; do not put one working copy in a folder synced by OneDrive, Dropbox, or iCloud.
+
+**Set up the other computer once:**
+
+1. Install Python, Git, and VS Code with the Python extension.
+2. Sign in to the GitHub account that owns your `Practice1` repository.
+3. In a terminal, run `git clone https://github.com/YOUR-USERNAME/Practice1.git` in a normal local folder, then open the new `Practice1` folder in VS Code.
+
+**Whenever you switch computers:**
+
+1. On the computer you are leaving, save, commit, and push your changes (Step 8).
+2. On the computer you are starting to use, run `git pull` before editing. In VS Code, **Sync Changes** can do this too.
+3. When finished, save, commit, and push again before switching back.
+
+Do not edit the same files on both computers before syncing. If you do, Git may ask you to resolve a merge conflict. Run the checker with `py check.py` on Windows or `python3 check.py` on macOS/Linux.
